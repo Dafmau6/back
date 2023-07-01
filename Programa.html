@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Practica en Clases</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</header>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Tutorias</a></li>
+            <li><a href="#">Estudiantes</a></li>
+            <li><a href="#">Proyecto de aula</a></li>
+            <li><a href="#">Asignaturas</a></li>
+            <li><a href="#">Profesores</a></li>
+            <li><a href="#">Notas</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <nav class="menu-lateral">
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li class="barra-lateral"><a href="#">Gestionar Profesores</a></li>
+                <li class="barra-lateral"><a href="#">Matricular Estudiante</a></li>
+                <li class="barra-lateral"><a href="#">Gestionar Areas</a></li>
+                <li class="barra-lateral"><a href="#">Asignar Coordinador PA</a></li>
+                <li class="barra-lateral"><a href="#">Gestionar Asignaturas</a></li>
+                <li class="barra-lateral"><a href="#">Gestionar Sesiones</a></li>
+                <li class="barra-lateral"><a href="#">Asignacion Academina</a></li>
+            </ul>
+        </nav>
+        <div class="Contenidos">
+            <div class="contenido">
+                <div class="title">
+                    <h1>Crea Profesores</h1>
+                </div>
+
+                <div class="Datos">
+                    <div class="columna columna-1">
+                        <div class="campo">
+                            <label for="nombre1">Primer Nombre:</label>
+                            <input type="text" id="nombre1" name="nombre1">
+                        </div>
+                        <div class="campo">
+                            <label for="nombre2">Segundo Nombre:</label>
+                            <input type="text" id="nombre2" name="nombre2">
+                        </div>
+                        <div class="campo2">
+                            <div class="genero">
+                                <span>Género: </span>
+                                <label for="masculino">
+                                    <input type="radio" id="masculino" name="genero" value="masculino">
+                                    Masculino
+                                </label>
+                                <label for="femenino">
+                                    <input type="radio" id="femenino" name="genero" value="femenino">
+                                    Femenino
+                                </label>
+                                <label for="otro">
+                                    <input type="radio" id="otro" name="genero" value="otro">
+                                    Otro
+                                </label>
+                            </div>
+                        </div>
+                        <div class="campo2">
+                            <div class="identificacion">
+                                <span>Tipo Identificacion: </span>
+                                <label for="CC">
+                                    <input type="radio" id="CC" name="identificacion" value="CC">
+                                    CC
+                                </label>
+                                <label for="TI">
+                                    <input type="radio" id="ti" name="identificacion" value="ti">
+                                    TI
+                                </label>
+                                <label for="otro">
+                                    <input type="radio" id="otro" name="identificacion" value="otro">
+                                    Otro
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br>
+                        </div>
+                        <div class="campo">
+                            <label for="Direccion">Direccion:</label>
+                            <input type="text" id="Direccion" name="Direccion"><br>
+                        </div>
+                    </div>
+                    <div class="columna columna-2">
+                        <div class="campo">
+                            <label for="nombre2">Primer Apellido:</label>
+                            <input type="text" id="nombre2" name="nombre2">
+                        </div>
+                        <div class="campo">
+                            <label for="apellido2">Segundo Apellido:</label>
+                            <input type="text" id="apellido2" name="apellido2"><br>
+                        </div>
+                        <div class="campo">
+                            <div class="contrato">
+                                <span>Tipo de Contrato: </span>
+                                <label for="completo">
+                                    <input type="radio" id="completo" name="contrato" value="completo">
+                                    <a>Tiempo Completo </a>
+                                </label>
+                                <label for="medio">
+                                    <input type="radio" id="medio" name="contrato" value="medio">
+                                    Medio Tiempo
+                                </label>
+                                <label for="cuarto">
+                                    <input type="radio" id="cuarto" name="contrato" value="cuarto">
+                                    3/4 de Tiempo
+                                </label>
+                                <label for="catedra">
+                                    <input type="radio" id="catedra" name="contrato" value="catedra">
+                                    Catedra
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="numid">Numero identificacion:</label>
+                            <input type="tel" id="numid" name="numid"><br>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">telefono:</label>
+                            <input type="tel" id="telefono" name="telefono"><br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="contenido2">
+                <div class="title2">
+                    <h3>Configurar el Usuario y la contraseña</h3>
+                </div>
+                <div class="Datos">
+                    <div>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+                    </div>
+                </div>
+            </div>
+            <div class="Contenido3">
+                <h1>Tabla de Profesores</h1>
+
+                <div id="tabla-usuarios"></div>
+              
+                <script src="Script.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

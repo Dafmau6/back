@@ -1,0 +1,238 @@
+body {
+    background-color: lightgray; /* Fondo de la página en gris */
+    margin: 0; /* Eliminar margen predeterminado del cuerpo */
+    padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+  }
+  .contenedor {
+    display: flex;
+    background-color:  lightgray; /* Color de fondo blanco para el contenedor */
+    /* Resto de estilos para el contenedor */
+    
+  }
+  
+  
+  .contenido {
+    background-color: white; /* Color de fondo blanco para el contenido principal */
+    /* Resto de estilos para el contenido principal */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    font-family: sans-serif;
+    flex: 1;
+    padding: 20px;
+
+    
+  }
+  
+  .menu{
+    background-color: #d6753d;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+
+ 
+  .menu-lateral {
+    width: 200px;
+    background-color: lightgray;
+  }
+  
+  .menu-lateral ul li:first-child a {
+    background-color: #d6753d;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .menu-lateral ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .menu-lateral li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-lateral a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  .menu-lateral ul li.barra-lateral a{
+    border-left: 5px solid #d6753d;
+    padding-left: 10px;
+  }
+  
+
+  .title {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  .campo {
+    margin-bottom: 20px;
+  }
+  
+  .campo2 {
+    margin-bottom: 33px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .Datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de ancho igual */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+
+  .genero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .genero span {
+    margin-right: 10px;
+    
+  }
+  
+  .genero label {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .identificacion {
+    display: flex;
+    align-items: center;
+  }
+  
+  .identificacion span {
+    margin-right: 10px;
+  }
+  
+  .identificacion label {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .contrato {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contrato span {
+    margin-right: 10px;
+  }
+  
+  .contrato label {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+
+  .contenido2 {
+    background-color: white; /* Color de fondo blanco para el contenido principal */
+    /* Resto de estilos para el contenido principal */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    font-family: sans-serif;
+    flex: 1;
+    padding: 20px;
+
+    
+  }
+
+  .Contenido3 {
+    background-color: white; 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    font-family: sans-serif;
+    flex: 1;
+    padding: 20px;
+
+    
+  }
+  .title2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  #tabla-usuarios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .caja-usuario {
+  /*display: flex;*/
+  flex-direction:row; /* Cambiamos la dirección de flexión a columna */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f2f2f2;
+}
+
+.titulo-caja {
+  background-color:#d6753d;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.foto-usuario {
+  width: 100px; /* Ajusta el ancho de la foto según tus necesidades */
+  height: auto; /* La altura se ajustará proporcionalmente */
+  align-items: left;
+}
+
+.informacion-usuario {
+  display: flex; /* Utilizamos flexbox para el contenido de la caja */
+  justify-content: space-between; /* Distribución equitativa del contenido */
+  align-items: center; /* Centramos verticalmente el contenido */
+}
+  .informacion-usuario h3 {
+    margin-top: 0; /* Añade un margen superior de 0 al título */
+  }
+  
